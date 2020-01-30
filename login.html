@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid login">
+        <div class="container">
+            <div class="pd-t-50 pd-lr-20 text-center ">
+                <img class="logo " src="assets/logo-w.png">
+                <div>
+                    <h3 class="text-white">Bienvenido</h3>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center" id="loginf">
+                <form class="login-form" onsubmit="validateLogin()" name="loginform" action='./index.html'>
+                    <div class="form-group">
+                        <label for="email" class="text-white">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="text-white">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <p class="text-white">Please use this email: test@test.com <br/> and password :1234</plass="text-white>
+                        <p class="text-white cursor-pointer" onclick="recover()">Olvidaste tu Contraseña</p>
+                    </div>
+                    <button type="submit" class="btn-login text-center">Entrar</button>
+                </form>
+            </div>
+            <div class="d-none justify-content-center" id="recover">
+                <form class="login-form" onsubmit="recoverPassword()" name="recoverpswd">
+                    <p class="text-white">Ingresa tus datos, si contamos con ellos te llegará un correo para recuperar tu contraseña</p>
+                    <div class="form-group">
+                        <label for="email" class="text-white">Correo</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <button type="submit" class="btn-login text-center">Recuperar contraseña</button>
+                </form>
+            </div>
+        </div>
+        </div>
+       
+    <script src="login.js"></script>
+</body>
+
+</html>

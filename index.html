@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      html,
+      body,
+      div,
+      iframe {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .container-fluid{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg  fixed-top">
+      <a class="navbar-brand" href="#"> <img class="logo-m" src="assets/logo-m.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarchallenge"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarchallenge">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div>
+    <iframe src="https://www.youtube.com/embed/THC5sFdHo7w?autoplay=1" class="full-size" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+  </div>
+  <section class="container-fluid bg-purple text-center pd-t-50">
+    <h2>Our sections</h2>
+    <div class="ours">
+      <a href="#sport-section">
+      <div>
+        <div class="sports"></div>
+        <p class="our-sections">Sports</p>
+      </div>
+      </a>
+      <a href="#news-section">
+      <div>
+        <div class="news"></div>
+        <p class="our-sections">News</p>
+      </div>
+      </a>
+      <a href="#comedy-section">
+      <div>
+        <div class="comedy"></div>
+        <p class="our-sections">Comedy</p>
+      </div>
+      </a>
+    </div>
+  </section>
+  <section class="container-fluid text-center pd-t-80" id="sport-section">
+      <h2>Sports</h2>
+    <div class="d-flex ours" id="sports"></div>
+  </section>
+  <section class="container-fluid text-center pd-t-80 bg-purple" id="news-section">
+    <h2>News</h2>
+    <div class="d-flex ours" id="news"></div>
+  </section>
+  <section class="container-fluid text-center pd-t-80" id="comedy-section">
+      <h2>Comedy</h2>
+    <div class="d-flex ours" id="comedy"></div>
+  </section>
+ 
+  <div id="modal" class="modal modal-size fade" role='dialog'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <div class="modal-body" id= "modal-body">
+            </div>
+        </div>
+      </div>
+  </div>
+<!-- Footer -->
+  <footer class="footer page-footer font-small blue pt-4">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 col-6">
+          <a href="aboutus.html" class="text-white">About us</a>
+        </div>
+        <div class="col-md-6 col-6">
+              <a href="contact-us.html" class="text-white">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3 text-white">Front end Challenge 2020</div>
+  </footer>
+  <!-- Footer -->
+  <script src="home.js"></script>
+</div>
+</body>
+
+</html>
